@@ -1,11 +1,25 @@
+@use "../partials/sizes";
 @use "../partials/mixins";
 
 .contact-form {
+  width: sizes.$max-screen-width;
   @include mixins.font-styling-contact();
+  margin-bottom: 45px;
   &__border {
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 15px;
     border: 2px solid white;
   }
+  &__input,
+  select {
+    @include mixins.flex(row);
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
   &__textarea {
+    width: 85%;
     resize: none;
   }
 }

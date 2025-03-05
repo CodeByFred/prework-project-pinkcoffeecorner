@@ -684,6 +684,7 @@ template {
 }
 
 .contact-form {
+  width: 1168.33px;
   font-family: "Open Sans", serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -691,11 +692,26 @@ template {
   font-variation-settings: "wdth" 100;
   font-size: 0.85em;
   color: #404040;
+  margin-bottom: 45px;
 }
 .contact-form__border {
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 15px;
   border: 2px solid white;
 }
+.contact-form__input,
+.contact-form select {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: normal;
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
 .contact-form__textarea {
+  width: 85%;
   resize: none;
 }
 

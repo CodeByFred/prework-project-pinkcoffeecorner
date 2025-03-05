@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="icon" href="../assets/icons/mug-hot-pink.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../assets/icons/mug-hot-pink.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rammetto+One&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet">
 </head>
 
 <body>
@@ -24,31 +24,48 @@
     </nav>
   </header>
   <main>
-    <section class="backdrop backdrop__container">
-      <h2 class="backdrop__container--heading">Contact Us</h2>
-      <div class="backdrop__container--large">
-        <form class="contact-form" action="submit">
-          <fieldset class="contact-form__border">
-            <label for="nameInput">Full Name</label>
-            <input type="text" id="nameInput" name="fname" />
-            <label for="emailInput">Email</label>
-            <input type="email" id="emailInput" name="email" />
-            <br />
-            <label for="nameInput">Full Name</label>
-            <input type="text" id="nameInput" name="fname" />
-            <label for="emailInput">Email</label>
-            <input type="email" id="emailInput" name="email" />
-            <br />
-            <label for="">Preferred Contact Method</label>
-            <input type="radio" />
-            <input type="radio" />
-            <br />
-            <label for="">Message</label>
-            <br />
-            <textarea class="contact-form__textarea" name="" id="" required rows="5"></textarea>
-          </fieldset>
-        </form>
-      </div>
+    <section class="backdrop">
+      <h2 class="backdrop__heading--center">Contact Us</h2>
+      <form class="contact-form" action="contact.html">
+        <fieldset class="contact-form__border">
+          <label for="nameInput">Name</label>
+          <br>
+          <input class="contact-form__input" type="text" id="nameInput" name="fname" required>
+          <br>
+          <label for="emailInput">Email</label>
+          <br>
+          <input class="contact-form__input" type="email" id="emailInput" name="email" required>
+          <br>
+          <label for="phoneInput">Phone</label>
+          <br>
+          <input class="contact-form__input" type="tel" id="phoneInput" name="phone">
+          <br>
+          <label for="inquiry">Inquiry Type</label>
+          <br>
+          <select id="inquiry" name="inquiry" required>
+            <option value="" disabled selected>Please select a topic</option>
+            <option value="booking">Bookings</option>
+            <option value="order">Online Order</option>
+            <option value="complaint">Complaints</option>
+            <option value="feedback">Feedback</option>
+          </select>
+          <br>
+          <label>Preferred Contact Method</label>
+          <div class="contact-form__input--method">
+            <input type="radio" id="contactEmail" name="contactMethod" value="email" required>
+            <label for="contactEmail">Email</label>
+            <br>
+            <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+            <label for="contactPhone">Phone</label>
+          </div>
+          <br>
+          <label for="messageInput">Message</label>
+          <br>
+          <textarea class="contact-form__textarea" id="messageInput" name="message" rows="5" required></textarea>
+          <br>
+          <button class="button" type="submit">Submit</button>
+        </fieldset>
+      </form>
     </section>
   </main>
   <footer class="footer">
@@ -63,10 +80,3 @@
 </body>
 
 </html>
-
-<!-- Full Name (To address them properly)
-Email Address (To respond to their inquiry)
-Phone Number (Optional, if needed for quick follow-ups)
-Subject/Inquiry Type (E.g., "Reservation," "Catering," "General Inquiry")
-Message Box (For customers to write their question/request)
-Preferred Contact Method (Email or phone, optional) -->
