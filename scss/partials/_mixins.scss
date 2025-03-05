@@ -1,0 +1,112 @@
+@use "./colors";
+
+@mixin font-styling-header-links() {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 0.75em;
+  text-decoration: none;
+  color: colors.$gray-tundora;
+}
+
+@mixin font-styling-dropdown() {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.15em;
+}
+
+@mixin font-styling-menu-lg() {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 0.9em;
+}
+
+@mixin font-styling-menu-sm() {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 0.55em;
+}
+
+@mixin font-styling-regular() {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.1em;
+}
+
+@mixin font-styling-review-large() {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+@mixin font-styling-contact() {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 0.85em;
+  color: colors.$gray-tundora;
+}
+
+@mixin font-styling-review-small() {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 0.85em;
+}
+
+@mixin font-styling-footer() {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 0.85em;
+  color: white;
+}
+
+@mixin font-styling-button() {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+@mixin font-title-rammetto($font-color, $font-size) {
+  font-family: "Rammetto One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: $font-size;
+  color: $font-color;
+}
+
+@mixin flex($direction: column, $justify: center, $align-items: normal) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align-items;
+}

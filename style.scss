@@ -1,0 +1,16 @@
+@use "./scss/partials/normalize";
+@use "./scss/partials/colors";
+@use "./scss/blocks/icons";
+@use "./scss/sections/header";
+@use "./scss/blocks/backdrop";
+@use "./scss/sections/menu";
+@use "./scss/sections/review.scss";
+@use "./scss/sections/footer";
+@use "./scss/partials/mixins";
+@use "./scss/sections/contact";
+@use "./scss/blocks/button";
+
+body {
+  background-color: lightgray;
+  @include mixins.flex($justify: normal, $align-items: center);
+}

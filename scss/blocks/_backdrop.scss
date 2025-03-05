@@ -1,0 +1,85 @@
+@use "../partials/colors";
+@use "../partials/sizes";
+@use "../partials/mixins";
+
+.backdrop {
+  background-color: colors.$pink-rose-bud;
+  @include mixins.flex($align-items: center);
+  max-width: sizes.$max-screen-width;
+  min-height: 430px;
+  &--about {
+    background-color: white;
+  }
+  &--split-vertical {
+    background-color: colors.$green-viridian-green;
+    @include mixins.flex($direction: row);
+    height: 430px;
+    @include mixins.flex(
+      row,
+      $justify: space-between,
+      $align-items: flex-start
+    );
+  }
+  &__textbox--align-left {
+    @include mixins.flex($align-items: flex-start);
+    height: 50%;
+    max-width: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-self: center;
+  }
+  &__heading--half {
+    @include mixins.font-title-rammetto(white, 2.25em);
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-wrap: nowrap;
+  }
+  &__text {
+    @include mixins.font-styling-regular();
+    color: white;
+    padding-bottom: 20px;
+    &-about {
+      border: 2px red solid;
+      @include mixins.font-styling-review-large();
+      color: colors.$gray-tundora;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+  &__heading--center {
+    @include mixins.flex($justify: center, $align-items: center);
+    @include mixins.font-title-rammetto(white, 2.25em);
+    line-height: 1.5;
+    // margin: 15px 0px 25px 0px;
+    &-pink {
+      border: 2px blue solid;
+      @include mixins.font-title-rammetto(colors.$pink-rose-bud, 2.25em);
+      @include mixins.flex($justify: center, $align-items: center);
+    }
+  }
+  &__image--half {
+    // right: 0;
+    height: 100%;
+    width: 50%;
+    // z-index: 1;
+  }
+  &__reviews {
+    @include mixins.flex($direction: row, $align-items: center);
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 15px;
+    height: 100%;
+    max-width: 95%;
+    margin-bottom: 30px;
+  }
+  &__textbox {
+    min-width: 50%;
+    color: white;
+    @include mixins.flex();
+    &--centered {
+      @include mixins.flex($justify: center, $align-items: center);
+      padding: 10px;
+    }
+  }
+}

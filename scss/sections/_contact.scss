@@ -1,0 +1,11 @@
+@use "../partials/mixins";
+
+.contact-form {
+  @include mixins.font-styling-contact();
+  &__border {
+    border: 2px solid white;
+  }
+  &__textarea {
+    resize: none;
+  }
+}

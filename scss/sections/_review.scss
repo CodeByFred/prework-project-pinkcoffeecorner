@@ -1,0 +1,33 @@
+@use "../partials/colors";
+@use "../partials/mixins";
+
+.review-card {
+  border: 2px solid white;
+  @include mixins.font-styling-review-large();
+  color: colors.$gray-tundora;
+  line-height: 1.35;
+  height: 135px;
+  width: 375px;
+  @include mixins.flex(row, center);
+  flex-wrap: wrap;
+  &__text {
+    height: 80px;
+    width: 275px;
+    text-align: center;
+    margin-top: 20px;
+
+    &-details {
+      width: 310px;
+      @include mixins.flex(row, space-between);
+      @include mixins.font-styling-review-small();
+    }
+  }
+
+  &__quote--left {
+    margin-top: 15px;
+  }
+
+  &__quote--right {
+    margin-top: 75px;
+  }
+}

@@ -1,0 +1,83 @@
+@use "../partials/colors";
+@use "../partials/mixins";
+
+.menu {
+  background-color: white;
+  @include mixins.flex($justify: flex-start, $align-items: center);
+  padding-bottom: 30px;
+  width: 100%;
+  &__heading {
+    @include mixins.font-title-rammetto(colors.$pink-rose-bud, 2.25em);
+  }
+  &__dropdown {
+    display: flex;
+    flex-direction: column;
+    @include mixins.flex($justify: flex-start);
+    background-color: colors.$pink-rose-fog;
+    color: colors.$gray-tundora;
+    width: 765px;
+    margin-bottom: 20px;
+    @include mixins.font-styling-dropdown();
+    cursor: pointer;
+    &[open] ::before {
+      transform: rotate(90deg);
+    }
+    &-bar {
+      @include mixins.flex(row, $justify: flex-start, $align-items: center);
+      height: 40px;
+      width: 750px;
+      padding-left: 15px;
+      flex-shrink: 0;
+      &::before {
+        content: "▶"; /* Re-add the disclosure icon (because of changing display to flex) */
+        font-size: 0.75em;
+        margin-right: 12px;
+      }
+    }
+    &-container {
+      background-color: white;
+      @include mixins.flex(row, space-between, normal);
+      row-gap: 20px;
+      flex-wrap: wrap;
+      width: 765px;
+      min-height: 300px;
+      padding-top: 15px;
+    }
+  }
+}
+
+.menu-card {
+  background-color: colors.$pink-rose-fog;
+  min-height: 300px;
+  max-height: fit-content;
+  width: 220px;
+  margin: 0;
+  @include mixins.flex($justify: flex-start, $align-items: center);
+  &__image {
+    height: 205px;
+    width: 195px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  &__title {
+    color: colors.$gray-tundora;
+    @include mixins.font-styling-menu-lg();
+    width: 205px;
+    line-height: 1.5;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+  &__text {
+    @include mixins.font-styling-menu-sm();
+    display: inline-block;
+    padding-top: 15px;
+    margin: 0;
+  }
+  &__icon {
+    height: 14px;
+    width: 14px;
+    margin-right: 5px;
+    vertical-align: middle; //makes <p> line up in container correctly
+  }
+}

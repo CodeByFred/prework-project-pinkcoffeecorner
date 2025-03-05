@@ -1,0 +1,28 @@
+@use "../partials/sizes";
+@use "../partials/colors";
+@use "../partials/mixins";
+@use "../blocks/icons";
+
+.header {
+  background-color: white;
+  height: 65px;
+  width: 100%;
+  max-width: sizes.$max-screen-width;
+  @include mixins.flex(row, space-between, center);
+  position: sticky;
+  top: 0;
+  &__navbar {
+    @include mixins.flex(row, $align-items: center);
+    margin-right: 60px;
+    column-gap: 40px;
+  }
+  &__links {
+    @include mixins.font-styling-header-links();
+    &:visited {
+      @include mixins.font-styling-header-links();
+    }
+  }
+  &__icon {
+    margin-left: 50px;
+  }
+}

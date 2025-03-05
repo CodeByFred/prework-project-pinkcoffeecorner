@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pink Coffee Corner</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="assets/icons/mug-hot-pink.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rammetto+One&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <a href="./index.html"><img class="header__icon icon--size-large" src="./assets/icons/mug-hot-pink.svg"
+        alt="Mug"></a>
+    <nav class="header__navbar">
+      <a class="header__links" href="./pages/about.html">ABOUT</a>
+      <a class="header__links" href="./pages/contact.html">CONTACT</a>
+    </nav>
+  </header>
+  <main>
+    <section class="backdrop--split-vertical">
+      <div class="backdrop__textbox--align-left">
+        <h2 class="backdrop__heading--half">The Pink<br>Coffee Corner</h2>
+        <p class="backdrop__text">Best coffee in Melbourne</p>
+        <a class="button" href="#reviews">See reviews</a>
+      </div>
+      <img class="backdrop__image--half" src="./assets/hero_image.jpg" alt="Cafe">
+    </section>
+    <section class="menu">
+      <h2 class="menu__heading">Our Menu</h2>
+      <details class="menu__dropdown">
+        <summary class="menu__dropdown-bar">Food</summary>
+        <div class="menu__dropdown-container">
+          <figure class="menu-card">
+            <img class="menu-card__image" src="./assets/chocolate_cupcake.jpg" alt="Chocolate Cupcake">
+            <figcaption class="menu-card__title">
+              Chocolate Cupcake
+              <p class="menu-card__text">
+                <img class="menu-card__icon" src="./assets/icons/leaf.svg" alt="Leaf">
+                Vegan
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="menu-card">
+            <img class="menu-card__image" src="./assets/donuts.jpg" alt="Donuts">
+            <figcaption class="menu-card__title">
+              Donuts <br>
+              <p class="menu-card__text">
+                <img class="menu-card__icon" src="./assets/icons/wheat-awn-circle-exclamation.svg" alt="Gluten Free">
+                Gluten Free
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="menu-card">
+            <img class="menu-card__image" src="./assets/raspberry_cupcake.jpg" alt="Raspberry Cupcake">
+            <figcaption class="menu-card__title">
+              Raspberry Cupcake <br>
+              <p class="menu-card__text">
+                <img class="menu-card__icon" src="./assets/icons/leaf.svg" alt="Leaf">
+                Vegan
+              </p>
+              <p class="menu-card__text">
+                <img class="menu-card__icon" src="./assets/icons/wheat-awn-circle-exclamation.svg" alt="Gluten Free">
+                Gluten Free
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="menu-card">
+            <img class="menu-card__image" src="./assets/vanilla_cake.jpg" alt="Vanilla Cake">
+            <figcaption class="menu-card__title">
+              Vanilla Cake <br>
+              <p class="menu-card__text">
+                <img class="menu-card__icon" src="./assets/icons/egg.svg" alt="Egg">
+                Contains Eggs
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="menu-card">
+            <img class="menu-card__image" src="./assets/cheesecake.jpg" alt="Cheesecake">
+            <figcaption class="menu-card__title">
+              Cheesecake <br>
+              <p class="menu-card__text">
+                <img class="menu-card__icon" src="./assets/icons/egg.svg" alt="Egg">
+                Contains Eggs
+              </p>
+              <p class="menu-card__text">
+                <img class="menu-card__icon" src="./assets/icons/cow.svg" alt="Cow">
+                Contains Dairy
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </details>
+      <details class="menu__dropdown">
+        <summary class="menu__dropdown-bar">Drinks</summary>
+        <div class="menu__dropdown-container">
+          <figure class="menu-card">
+            <img class="menu-card__image" src="./assets/coffee.jpg" alt="Flat White">
+            <figcaption class="menu-card__title">
+              Flat White <br>
+              <p class="menu-card__text">
+                <img class="menu-card__icon" src="./assets/icons/leaf.svg" alt="Leaf">
+                Vegan Options Available
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="menu-card">
+            <img class="menu-card__image" src="./assets/green_smoothie.jpg" alt="Green Smoothie">
+            <figcaption class="menu-card__title">
+              Green Smoothie <br>
+              <p class="menu-card__text">
+                <img class="menu-card__icon" src="./assets/icons/leaf.svg" alt="Leaf">
+                Vegan Options Available
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="menu-card">
+            <img class="menu-card__image" src="./assets/peanut_smoothie.jpg" alt="Peanut Butter Smoothie">
+            <figcaption class="menu-card__title">
+              Peanut Butter Smoothie <br>
+              <p class="menu-card__text">
+                <img class="menu-card__icon" src="./assets/icons/leaf.svg" alt="Leaf">
+                Vegan Options Available
+              </p>
+              <p class="menu-card__text">
+                <img class="menu-card__icon" src="./assets/icons/hand-dots.svg" alt="Nuts">
+                Contains Nuts
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </details>
+    </section>
+    <section class="backdrop" id="reviews">
+      <h2 class="backdrop__heading--center">Reviews</h2>
+      <div class="backdrop__reviews">
+        <div class="review-card">
+          <img class="review-card__quote--left icon--size-small" src="./assets/icons/quote-left.svg" alt="Quote Left">
+          <aside class="review-card__text">
+            The Pink Coffee Corner is amazing! Cozy ambiance, perfect lattes,
+            and friendly staff. The avocado toast is a must-try. Definitely
+            coming back!
+          </aside>
+          <img class="review-card__quote--right icon--size-small" src="./assets/icons/quote-right.svg"
+            alt="Quote Right">
+          <p class="review-card__text-details">
+            <span>Sarah L.</span><span>8th July
+              2024</span>
+          </p>
+        </div>
+        <div class="review-card">
+          <img class="review-card__quote--left icon--size-small" src="./assets/icons/quote-left.svg" alt="Quote Left">
+          <aside class="review-card__text">
+            Great spot for coffee lovers. Smooth flat white and delicious
+            cake. It can get crowded at lunchtime, but worth the visit for the
+            quality and friendly service.
+          </aside>
+          <img class="review-card__quote--right icon--size-small" src="./assets/icons/quote-right.svg"
+            alt="Quote Right">
+          <p class="review-card__text-details">
+            <span>John M.</span><span>8th July 2024</span>
+          </p>
+        </div>
+        <div class="review-card">
+          <img class="review-card__quote--left icon--size-small" src="./assets/icons/quote-left.svg" alt="Quote Left">
+          <aside class="review-card__text">
+            The Pink Coffee Corner is my favorite! Perfect mocha, tasty almond
+            croissant, and a welcoming atmosphere. Free Wi-Fi is a bonus.
+            Can't wait to return!
+          </aside>
+          <img class="review-card__quote--right icon--size-small" src="./assets/icons/quote-right.svg"
+            alt="Quote Right">
+          <p class="review-card__text-details">
+            <span>Jenny B.</span><span>4th June 2023</span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container-copyright">
+      <img class="icon--size-regular" src="./assets/icons/mug-hot-white.svg" alt="Mug">
+      <p class="footer__text-copyright">Copyright 2024</p>
+    </div>
+    <a href="https://instagram.com">
+      <img class="footer__icon icon--size-large" src="./assets/icons/instagram.svg" alt="Instagram">
+    </a>
+  </footer>
+</body>
+
+</html>

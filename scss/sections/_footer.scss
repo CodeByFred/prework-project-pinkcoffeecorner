@@ -1,0 +1,24 @@
+@use "../partials/colors";
+@use "../partials/sizes";
+@use "../partials/mixins";
+
+.footer {
+  background-color: colors.$green-amulet;
+  height: 60px;
+  width: 100%;
+  max-width: sizes.$max-screen-width;
+  @include mixins.flex(row, space-between, center);
+  &__container-copyright {
+    @include mixins.flex(row, flex-start, center);
+    height: 50%;
+    width: 150px;
+    margin-left: 50px;
+  }
+  &__text-copyright {
+    @include mixins.font-styling-footer();
+    padding-left: 5px;
+  }
+  &__icon {
+    margin-right: 50px;
+  }
+}
