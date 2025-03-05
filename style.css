@@ -367,7 +367,7 @@ template {
   margin-left: 50px;
 }
 
-.backdrop {
+.backdrop, .backdrop--about {
   background-color: #FAA196;
   display: flex;
   flex-direction: column;
@@ -424,7 +424,6 @@ template {
   padding-bottom: 20px;
 }
 .backdrop__text-about {
-  border: 2px red solid;
   font-family: "Open Sans", serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -433,8 +432,11 @@ template {
   font-size: 0.85em;
   font-style: italic;
   color: #404040;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 1.5;
 }
 .backdrop__heading--center {
   display: flex;
@@ -449,7 +451,6 @@ template {
   line-height: 1.5;
 }
 .backdrop__heading--center-pink {
-  border: 2px blue solid;
   font-family: "Rammetto One", serif;
   font-weight: 400;
   font-style: normal;
@@ -479,10 +480,7 @@ template {
 .backdrop__textbox {
   min-width: 50%;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: normal;
+  margin-bottom: 20px;
 }
 .backdrop__textbox--centered {
   display: flex;
