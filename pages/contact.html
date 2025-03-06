@@ -51,19 +51,21 @@
           </select>
           <br>
           <label>Preferred Contact Method</label>
+          <br>
           <div class="contact-form__input--method">
             <input type="radio" id="contactEmail" name="contactMethod" value="email" required>
             <label for="contactEmail">Email</label>
-            <br>
             <input type="radio" id="contactPhone" name="contactMethod" value="phone">
             <label for="contactPhone">Phone</label>
           </div>
-          <br>
           <label for="messageInput">Message</label>
           <br>
-          <textarea class="contact-form__textarea" id="messageInput" name="message" rows="5" required></textarea>
+          <textarea class="contact-form__input--message" id="messageInput" name="message" rows="5" required></textarea>
           <br>
-          <button class="button" type="submit">Submit</button>
+          <!-- <div class="contact-form__button"> -->
+          <button class="button contact-form__button" type="submit">Submit</button>
+
+          <!-- </div> -->
         </fieldset>
       </form>
     </section>

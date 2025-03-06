@@ -8,18 +8,25 @@
   &__border {
     margin-left: 30%;
     margin-right: 30%;
-    padding: 15px;
     border: 2px solid white;
   }
   &__input,
-  select {
-    @include mixins.flex(row);
-    width: 90%;
+  select,
+  label {
+    width: 50%;
     padding: 5px;
-    margin-bottom: 10px;
+    margin: 1%;
   }
-  &__textarea {
-    width: 85%;
+  &__input--method {
+    margin: 1%;
+    padding-left: 5px;
+  }
+  &__input--message {
+    width: 90%;
+    margin: 1%;
     resize: none;
+  }
+  &__button {
+    margin-left: 5px;
   }
 }
